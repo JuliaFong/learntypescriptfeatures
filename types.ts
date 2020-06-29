@@ -26,3 +26,11 @@ red.purple
 //Variables
 //Functions
 //Objects
+
+//Tye Annotations are:
+//Cdoe we add to tell Typescript what type of
+//calue a variable will refer to
+
+//Type inference
+//Typescript tries to figure out what type of 
+//value a variable refers to
