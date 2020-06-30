@@ -75,6 +75,17 @@ for (let i = 0; i < numbers.length; i++) {
     }
 }
 
+//Type annotations for functions:
+// Code we add to tell Typescript what type of arguments a function
+// will receive and what type of values it will return
+
+//Type inferene for functions:
+//Typescript tries to figure out what type of value 
+//a function will return
+
+
+
+
 
 
 
