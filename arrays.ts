@@ -33,7 +33,7 @@ const carsByMake = [
  const myCar = carMakers.pop();
 
  //prevent incompatible values
- carMakers.push(100); //such as this example
+//such as this example carMakers.push(100); 
 
  //Help with 'map'
 
@@ -51,3 +51,10 @@ const carsByMake = [
 const importantDate: (Date | string)[] = [new Date()];
 importantDate.push('2020-12-12')
 importantDate.push(new Date());
+
+//Where to use typed arrays??
+
+//Anytime we need to represent a collection of records with some
+//arbitrary sort order
+
+
