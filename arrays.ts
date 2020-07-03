@@ -26,3 +26,28 @@ const carsByMake = [
  //We can get help with 'map', 'forEach', 'reduce' functions
 
  //Flexible - arrays can still contain multiple different types
+
+
+ //This helps with inference when extracting values
+ const car = carMakers[0];
+ const myCar = carMakers.pop();
+
+ //prevent incompatible values
+ carMakers.push(100); //such as this example
+
+ //Help with 'map'
+
+ carMakers.map((car: string): string => {
+    return car;
+ });
+
+ //Flexible types
+
+ const importantDates = [new Date(), '2030-10-10']
+ importantDates.push('2050-10-10')
+ importantDates.push(new Date())
+//OR
+
+const importantDate: (Date | string)[] = [new Date()];
+importantDate.push('2020-12-12')
+importantDate.push(new Date());
