@@ -25,7 +25,7 @@ printVehicle(oldCivic)
 
 
 
-interface  Vehicle {
+interface  Reportable {
     // name: string
     // year: number
     // broken: boolean
@@ -41,11 +41,15 @@ const olderCivic = {
     }
 };
 
-const printVehicles = (vehicle: Vehicle): void => {
+const printSummary = (item: Reportable): void => {
     // console.log(`Name ${vehicle.name}`)
     // console.log(`Year: ${vehicle.year}`)
     // console.log(`Broken:  ${vehicle.broken}`)
-    console.log(vehicle.summary())
+    console.log(item.summary())
 };
 
-printVehicles(olderCivic)
+printSummary(olderCivic)
+
+// ^^ a condensed interface definition
+
+//Reportable --> has a summary function that returns a string
