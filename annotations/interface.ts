@@ -16,3 +16,36 @@ const printVehicle = (vehicle: { name: string, year: number, broken: boolean }):
 }
 
 printVehicle(oldCivic)
+
+// Instead, create and interface at the very top of the code 
+// new example
+
+// anytime you create an interface, 
+//you create a new type ** Always use a capital letter
+
+
+
+interface  Vehicle {
+    // name: string
+    // year: number
+    // broken: boolean
+    summary(): string 
+}
+
+const olderCivic = {
+    name: 'civic',
+    year: 2000,
+    broken: true,
+    summary(): string {
+        return `Name: ${this.name}`
+    }
+};
+
+const printVehicles = (vehicle: Vehicle): void => {
+    // console.log(`Name ${vehicle.name}`)
+    // console.log(`Year: ${vehicle.year}`)
+    // console.log(`Broken:  ${vehicle.broken}`)
+    console.log(vehicle.summary())
+};
+
+printVehicles(olderCivic)
