@@ -41,6 +41,15 @@ const olderCivic = {
     }
 };
 
+const drinks = {
+    color: 'brown',
+    cabornated: true,
+    sugar: 40,
+    summary(): string {
+        return `My drink has ${this.sugar} grams of sugar`
+    }
+};
+
 const printSummary = (item: Reportable): void => {
     // console.log(`Name ${vehicle.name}`)
     // console.log(`Year: ${vehicle.year}`)
@@ -49,7 +58,24 @@ const printSummary = (item: Reportable): void => {
 };
 
 printSummary(olderCivic)
-
+printSummary(drinks)
 // ^^ a condensed interface definition
 
 //Reportable --> has a summary function that returns a string
+
+// we can use interface with extremely different objects and properties
+//we can have those objects or properties implement different functions
+//by doing so this encourages us to write generic functions
+
+// Interface Reportable 
+// Reportable is gatekeeper to 'printSummary'
+
+
+// General strategy for reusable code in TS
+
+// Create functions that accept arguments that 
+//are typed with interfaces
+
+//Objects & classes can decide to implement a given interface to
+//work with a function
+
