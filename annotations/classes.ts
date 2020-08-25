@@ -13,41 +13,41 @@
 
 // ALWAYS capitalize a name of a class
 
-class Vehicle {
-    constructor(public color: string) {
-    }
-    public drive(): void {
-        console.log('vroom vroom')
-    }
+// class Vehicle {
+//     constructor(public color: string) {
+//     }
+//     public drive(): void {
+//         console.log('vroom vroom')
+//     }
 
-    public name() {
+//     public name() {
         
-    } protected honk(): void {
-        console.log('beep')
-    }
-}
+//     } protected honk(): void {
+//         console.log('beep')
+//     }
+// }
 
-const vehicle = new Vehicle('orange')
-console.log(vehicle.color)
-// vehicle.honk()
+// const vehicle = new Vehicle('orange')
+// console.log(vehicle.color)
+// // vehicle.honk()
 
-class Car extends Vehicle {
-    constructor(public wheels: number, color: string){
-        super('color')
-    }
+// class Car extends Vehicle {
+//     constructor(public wheels: number, color: string){
+//         super('color')
+//     }
 
-    private drive(): void {
-        console.log('vroom')
-    }
+//     private drive(): void {
+//         console.log('vroom')
+//     }
 
-    startDrivingProcess(): void {
-        this.drive()
-        this.honk()
-    }
-}
+//     startDrivingProcess(): void {
+//         this.drive()
+//         this.honk()
+//     }
+// }
 
-const car = new Car(4, 'color')
-car.startDrivingProcess()
+// const car = new Car(4, 'color')
+// car.startDrivingProcess()
 // car.drive() // can't call method outside of class
 // car.honk()
 
