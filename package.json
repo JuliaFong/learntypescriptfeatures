@@ -17,12 +17,14 @@
     "url": "https://github.com/JuliaFong/learntypescriptfeatures/issues"
   },
   "homepage": "https://github.com/JuliaFong/learntypescriptfeatures#readme",
-  "description": "",
   "devDependencies": {
     "typescript": "^4.0.2"
   },
   "dependencies": {
     "nodemon": "^2.0.4",
+    "reflect-metadata": "^0.1.13",
     "ts-node": "^9.0.0"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
